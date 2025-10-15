@@ -1,18 +1,17 @@
 RetailPlus · Predicción de ventas: Regresión vs Random Forest 🛒📈
 Comparo modelos de regresión para predecir Monto USD (o demanda) y ayudar en inventario, precios (elasticidad) y crédito.
 
-🎯 Objetivo
+🎯 Objetivo:
 Quedarse con el modelo que mejor predice y generaliza:
 Regresión (Lineal, Ridge, Lasso)
 Random Forest Regressor
 Métrica principal: MAPE. Apoyo: MAE, RMSE, R².
 
-🧩 Qué problema resuelve
+🧩 Problemas que resuelve:
 Excesos y quiebres por mal pronóstico
-Precios poco afinados (sin medir elasticidad)
-Insumos para gestión de crédito (opcional)
+Precios poco afinados
 
-📦 Datos (ejemplo de columnas)
+📦 Datos:
 Target: Monto USD (o ventas_semana)
 Numéricas: Cantidad, Flete, etc.
 Categóricas: SECTOR_CLIENTE, RUBRO_CLIENTE, COD_MARCA, CENTRO_DESPACHO, REGION/PROVINCIA/DISTRITO/CIUDAD, CONDICION_PAGO, UNIDAD_MEDIDA
@@ -24,7 +23,7 @@ Limpieza mínima:
    Outliers en Monto USD → IQR
    One-Hot a categóricas
 
-🔧 Pipeline
+🔧 Pipeline:
 EDA breve (faltantes, outliers)
 Split train/valid/test
 Prepro: imputación + One-Hot (num/cat)
